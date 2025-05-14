@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 app.use(cors({
-    origin: "https://glistening-scone-f04f46.netlify.app/", 
+    origin: "https://glistening-scone-f04f46.netlify.app", 
     credentials:true,
 }));
 app.use('/',routes)
