@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 app.use(cors({
-    origin: "http://localhost:5173", 
+    origin: "https://effulgent-cajeta-b2286f.netlify.app", 
     credentials:true,
 }));
 app.use('/',routes)
