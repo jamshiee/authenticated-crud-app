@@ -24,8 +24,8 @@ export const createJwt = (userId,res) =>{
 
     res.cookie('jwt',jwtSign,{
         httpOnly: true,
-        secure: false, 
-        sameSite: "Lax", 
+        secure: true, 
+        sameSite: "None", 
         maxAge: 24 * 60 * 60 * 1000, 
       })
 
